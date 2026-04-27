@@ -37,7 +37,7 @@ export default function DishCard({ dish }: DishCardProps) {
           ))}
         </div>
         
-        <div className="grid grid-cols-4 gap-3 text-center text-xs border-t border-gray-200 pt-4">
+        <div className="grid grid-cols-4 gap-3 text-center text-xs border-t border-gray-200 pt-4 mb-4">
           <div>
             <div className="font-bold text-[#D95E25] text-sm">{dish.protein}g</div>
             <div className="text-gray-500 text-xs mt-1">Protein</div>
@@ -55,6 +55,15 @@ export default function DishCard({ dish }: DishCardProps) {
             <div className="text-gray-500 text-xs mt-1">Cals</div>
           </div>
         </div>
+        
+        <a 
+          href="https://nourishiom.touchtakeaway.net/menu/MEAL-BOXES"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full bg-[#D95E25] hover:bg-[#025336] text-white text-center font-bold py-3 px-4 rounded-lg transition-colors duration-200"
+        >
+          Order Now
+        </a>
       </div>
     </div>
   );

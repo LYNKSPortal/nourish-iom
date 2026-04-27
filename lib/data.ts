@@ -182,6 +182,32 @@ export const dishes: Dish[] = [
     calories: 480,
     image: '/images/dishes/prego-steak.jpg',
     category: 'wrap'
+  },
+  {
+    id: 'chicken-caesar-wrap',
+    name: 'High Protein Chicken Caesar Wrap',
+    price: 9.95,
+    description: 'Fresh chicken breast, Romaine lettuce, Foccacia croutons, Homemade Caesar sauce, tomato, cucumber, onions & egg',
+    tags: ['High Protein'],
+    protein: 44,
+    carbs: 34,
+    fat: 20,
+    calories: 503,
+    image: '/images/dishes/High-Protein-Chicken-Caesar-Wrap.jpg',
+    category: 'wrap'
+  },
+  {
+    id: 'chicken-tikka-wrap',
+    name: 'High Protein Chicken Tikka Wrap',
+    price: 9.95,
+    description: 'Freshly marinated chicken breast, Homemade Tikka sauce, peppers, onion, tomato, cucumber, fresh herbs & spices',
+    tags: ['High Protein'],
+    protein: 47,
+    carbs: 33,
+    fat: 15,
+    calories: 459,
+    image: '/images/dishes/High-Protein-Chicken-Tikka-Wrap.jpg',
+    category: 'wrap'
   }
 ];
 
@@ -205,8 +231,9 @@ export const businessInfo: BusinessInfo = {
   tagline: 'High-protein, nutrient-dense meals made fresh in Douglas, Isle of Man.',
   location: 'Douglas, Isle of Man',
   address: '6 Prospect Hill, Douglas, IM1 1EJ, Isle of Man',
-  phone: '+44 1624 123456',
-  email: 'hello@nourishiom.com',
+  phone: '+44 1624 610226',
+  email: 'andy@nourish.im',
+  whatsapp: 'https://wa.me/447624462222',
   hours: {
     monday: '8:00am – 6:00pm',
     tuesday: '8:00am – 6:00pm',

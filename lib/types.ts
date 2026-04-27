@@ -26,6 +26,7 @@ export interface BusinessInfo {
   address: string;
   phone: string;
   email: string;
+  whatsapp: string;
   hours: {
     monday: string;
     tuesday: string;

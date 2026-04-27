@@ -3,7 +3,7 @@ import DishCard from '@/components/DishCard';
 import { dishes, businessInfo } from '@/lib/data';
 
 export default function Home() {
-  const featuredDishes = dishes.slice(0, 6);
+  const featuredDishes = dishes.slice(0, 3);
 
   return (
     <div>
@@ -38,7 +38,7 @@ export default function Home() {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button href="/our-dishes">View Our Dishes</Button>
-            <Button href="/order-online" variant="secondary">Order Online</Button>
+            <Button href="https://nourishiom.touchtakeaway.net/menu/MEAL-BOXES" variant="secondary" target="_blank">Order Online</Button>
           </div>
         </div>
       </section>
@@ -179,25 +179,6 @@ export default function Home() {
                 title="Nourish Location"
               ></iframe>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-[#025336] text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-bold mb-6" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>
-            Order fresh, healthy meals today
-          </h2>
-          <p className="text-xl mb-8 text-white/90">
-            Start your journey to better nutrition with Nourish
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button href="/order-online" className="bg-[#D95E25] !text-white hover:bg-[#c24e1a]">
-              Order Online
-            </Button>
-            <Button href="/packages" className="bg-white !text-[#025336] hover:bg-gray-100">
-              View Packages
-            </Button>
           </div>
         </div>
       </section>

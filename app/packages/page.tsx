@@ -41,25 +41,25 @@ export default function Packages() {
               </div>
 
               <div className="space-y-3 mb-8">
-                <div className="flex items-center">
+                <div className="flex items-center justify-center">
                   <span className="text-[#025336] mr-2">✓</span>
                   <span className="text-gray-700">Fresh, chef-prepared meals</span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center">
                   <span className="text-[#025336] mr-2">✓</span>
                   <span className="text-gray-700">High protein, low fat</span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center">
                   <span className="text-[#025336] mr-2">✓</span>
                   <span className="text-gray-700">Real ingredients</span>
                 </div>
-                <div className="flex items-center">
+                <div className="flex items-center justify-center">
                   <span className="text-[#025336] mr-2">✓</span>
                   <span className="text-gray-700">Flexible pickup</span>
                 </div>
               </div>
 
-              <Button href="/order-online" className="w-full">
+              <Button href="https://nourishiom.touchtakeaway.net/menu/MEAL-BOXES" className="w-full" target="_blank">
                 Get Your Nourish Card
               </Button>
             </div>
@@ -106,29 +106,29 @@ export default function Packages() {
             Why Choose a Package?
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            <div className="flex items-start">
-              <div className=" mr-4">🚫</div>
+            <div className="flex flex-col items-center text-center">
+              <div className="text-4xl mb-3">🚫</div>
               <div>
                 <h3 className="font-bold text-lg mb-1 text-[#202020]">No Cooking</h3>
                 <p className="text-gray-700">Ready to eat, just heat and enjoy</p>
               </div>
             </div>
-            <div className="flex items-start">
-              <div className=" mr-4">🛒</div>
+            <div className="flex flex-col items-center text-center">
+              <div className="text-4xl mb-3">🛒</div>
               <div>
                 <h3 className="font-bold text-lg mb-1 text-[#202020]">No Shopping</h3>
                 <p className="text-gray-700">We handle all the ingredients</p>
               </div>
             </div>
-            <div className="flex items-start">
-              <div className=" mr-4">😌</div>
+            <div className="flex flex-col items-center text-center">
+              <div className="text-4xl mb-3">😌</div>
               <div>
                 <h3 className="font-bold text-lg mb-1 text-[#202020]">No Stress</h3>
                 <p className="text-gray-700">Meal planning made simple</p>
               </div>
             </div>
-            <div className="flex items-start">
-              <div className=" mr-4">⏰</div>
+            <div className="flex flex-col items-center text-center">
+              <div className="text-4xl mb-3">⏰</div>
               <div>
                 <h3 className="font-bold text-lg mb-1 text-[#202020]">Saves Time</h3>
                 <p className="text-gray-700">More time for what matters</p>
@@ -190,7 +190,7 @@ export default function Packages() {
         </div>
 
         <div className="text-center mt-16">
-          <Button href="/order-online">Order Online</Button>
+          <Button href="https://nourishiom.touchtakeaway.net/menu/MEAL-BOXES" target="_blank">Order Online</Button>
         </div>
       </div>
     </div>

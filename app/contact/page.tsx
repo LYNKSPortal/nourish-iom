@@ -74,6 +74,16 @@ export default function Contact() {
                 </div>
 
                 <div className="flex items-start">
+                  <div className="text-[#D95E25]  mr-4">💬</div>
+                  <div>
+                    <h3 className="font-bold text-lg mb-1 text-[#202020]">WhatsApp</h3>
+                    <a href={businessInfo.whatsapp} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-[#D95E25]">
+                      Message us on WhatsApp
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-start">
                   <div className="text-[#D95E25]  mr-4">🌐</div>
                   <div>
                     <h3 className="font-bold text-lg mb-1 text-[#202020]">Social Media</h3>

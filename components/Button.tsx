@@ -6,9 +6,10 @@ interface ButtonProps {
   variant?: 'primary' | 'secondary';
   className?: string;
   onClick?: () => void;
+  target?: string;
 }
 
-export default function Button({ href, children, variant = 'primary', className = '', onClick }: ButtonProps) {
+export default function Button({ href, children, variant = 'primary', className = '', onClick, target }: ButtonProps) {
   const baseStyles = 'inline-block px-8 py-3 rounded-lg font-semibold text-center transition-colors';
   
   // Determine background and text color based on className or variant
@@ -51,8 +52,15 @@ export default function Button({ href, children, variant = 'primary', className 
   const combinedClassName = `${baseStyles} ${className}`;
 
   if (href) {
+    const isExternal = target === '_blank';
     return (
-      <Link href={href} className={combinedClassName} style={inlineStyle}>
+      <Link 
+        href={href} 
+        className={combinedClassName} 
+        style={inlineStyle}
+        target={target}
+        rel={isExternal ? 'noopener noreferrer' : undefined}
+      >
         {children}
       </Link>
     );
