@@ -48,8 +48,8 @@ export default function OrderOnline() {
             <div className="text-sm text-gray-600 mb-6">
               £8.75 per meal
             </div>
-            <Button href="/packages" className="w-full">
-              Get Package
+            <Button href="https://nourishiom.touchtakeaway.net/menu/MEAL-BOXES" target="_blank" className="w-full">
+              Order Now
             </Button>
           </div>
 
@@ -67,8 +67,8 @@ export default function OrderOnline() {
             <div className="text-sm text-gray-600 mb-6">
               £8.75 per meal
             </div>
-            <Button href="/packages" className="w-full">
-              Get Package
+            <Button href="https://nourishiom.touchtakeaway.net/menu/MEAL-BOXES" target="_blank" className="w-full">
+              Order Now
             </Button>
           </div>
         </div>

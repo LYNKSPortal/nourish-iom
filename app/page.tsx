@@ -3,7 +3,7 @@ import DishCard from '@/components/DishCard';
 import { dishes, businessInfo } from '@/lib/data';
 
 export default function Home() {
-  const featuredDishes = dishes.slice(0, 3);
+  const featuredDishes = dishes.slice(-3).reverse();
 
   return (
     <div>
@@ -40,18 +40,6 @@ export default function Home() {
             <Button href="/our-dishes">View Our Dishes</Button>
             <Button href="https://nourishiom.touchtakeaway.net/menu/MEAL-BOXES" variant="secondary" target="_blank">Order Online</Button>
           </div>
-        </div>
-      </section>
-
-      <section className="py-16 bg-[#D95E25] text-white">
-        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-bold mb-4" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>
-            10% OFF OUR 6 BOX PACKAGE
-          </h2>
-          <p className="text-xl mb-6">Island-wide home delivery</p>
-          <Button href="/packages" className="bg-white !text-[#D95E25] hover:bg-gray-100">
-            View Offer
-          </Button>
         </div>
       </section>
 
@@ -98,12 +86,77 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="py-16 bg-[#D95E25] text-white">
+        <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="font-bold mb-6" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>
+              Treat Yo Self Card
+            </h2>
+            <p className="text-xl mb-8 leading-relaxed">
+              Save 10% off every box bought in the shop with the card, simply top it up with credit whenever it runs out.
+            </p>
+            
+            <div className="bg-white text-[#202020] rounded-lg p-8 mb-8 shadow-xl">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div className="text-center md:text-left">
+                  <div className="text-6xl mb-4">💳</div>
+                  <h3 className="font-bold text-2xl mb-3">How It Works</h3>
+                  <ul className="space-y-3 text-left">
+                    <li className="flex items-start">
+                      <span className="text-[#025336] mr-2 mt-1">✓</span>
+                      <span>One-time card fee: <strong>£10</strong></span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-[#025336] mr-2 mt-1">✓</span>
+                      <span>Every box: <strong>£8.95</strong> instead of £9.95</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-[#025336] mr-2 mt-1">✓</span>
+                      <span>Top up with credit anytime</span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="text-[#025336] mr-2 mt-1">✓</span>
+                      <span>Save 10% on every purchase</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="bg-[#FBF2E0] p-6 rounded-lg">
+                  <h4 className="font-bold text-xl mb-4">It's a No-Brainer!</h4>
+                  <div className="space-y-3 text-sm">
+                    <div className="flex justify-between items-center py-2 border-b border-gray-300">
+                      <span>Card Fee:</span>
+                      <span className="font-bold">£10.00</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2 border-b border-gray-300">
+                      <span>Price per box:</span>
+                      <span className="font-bold text-[#025336]">£8.95</span>
+                    </div>
+                    <div className="flex justify-between items-center py-2">
+                      <span>You save:</span>
+                      <span className="font-bold text-[#D95E25]">£1.00 per box</span>
+                    </div>
+                    <p className="text-xs text-gray-600 mt-4 italic">
+                      Card pays for itself after just 10 boxes!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <Button href="/contact" className="bg-white !text-[#D95E25] hover:bg-gray-100">
+              Get Your Card Today
+            </Button>
+          </div>
+        </div>
+      </section>
+
       <section className="py-16">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="font-bold text-center mb-12 text-[#202020]">
             What Our Customers Say
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <a 
               href="https://www.google.com/search?q=nourish+douglas+isle+of+man" 
               target="_blank"
@@ -116,7 +169,7 @@ export default function Home() {
               <span className="text-[#D95E25] font-medium text-sm">View or Leave Review →</span>
             </a>
             <a 
-              href="https://www.tripadvisor.com" 
+              href="https://www.tripadvisor.com/Restaurant_Review-g190928-d32988986-Reviews-Nourish-Douglas_Isle_of_Man.html" 
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow text-center"
@@ -134,17 +187,6 @@ export default function Home() {
             >
               <div className=" mb-3">👍</div>
               <h3 className="font-bold text-lg mb-2 text-[#202020]">Facebook</h3>
-              <p className="text-sm text-gray-600 mb-3">See our reviews</p>
-              <span className="text-[#D95E25] font-medium text-sm">View or Leave Review →</span>
-            </a>
-            <a 
-              href="https://www.trustpilot.com" 
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow text-center"
-            >
-              <div className="text-4xl mb-3">⭐</div>
-              <h3 className="font-bold text-lg mb-2 text-[#202020]">Trustpilot</h3>
               <p className="text-sm text-gray-600 mb-3">See our reviews</p>
               <span className="text-[#D95E25] font-medium text-sm">View or Leave Review →</span>
             </a>

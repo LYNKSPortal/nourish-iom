@@ -2,32 +2,6 @@ import { Dish, Package, BusinessInfo } from './types';
 
 export const dishes: Dish[] = [
   {
-    id: 'bbq-chicken-potato',
-    name: 'BBQ Chicken & Roasted Potato',
-    price: 9.95,
-    description: 'Tender BBQ chicken with perfectly roasted potatoes',
-    tags: ['Gluten Free', 'High Protein'],
-    protein: 45,
-    carbs: 38,
-    fat: 12,
-    calories: 450,
-    image: '/images/dishes/bbq-chicken-and-roast-potato.jpg',
-    category: 'box'
-  },
-  {
-    id: 'beef-steak-chilli',
-    name: 'Beef Steak Chilli & Mash Box',
-    price: 9.95,
-    description: 'Hearty beef steak chilli served with creamy mash',
-    tags: ['High Protein'],
-    protein: 42,
-    carbs: 40,
-    fat: 15,
-    calories: 475,
-    image: '/images/dishes/beef-steak-chilli-and-mash-box.jpg',
-    category: 'box'
-  },
-  {
     id: 'chicken-bacon-ranch',
     name: 'Chicken, Bacon & Ranch Burrito',
     price: 9.95,
@@ -54,19 +28,6 @@ export const dishes: Dish[] = [
     category: 'wrap'
   },
   {
-    id: 'meat-feast-pizza',
-    name: 'High Protein Meat Feast Pizza Slice',
-    price: 7.00,
-    description: 'Loaded with premium meats and extra protein',
-    tags: ['High Protein'],
-    protein: 35,
-    carbs: 30,
-    fat: 16,
-    calories: 420,
-    image: '/images/dishes/high-protein-meat-feast-pizza-slice.jpg',
-    category: 'pizza'
-  },
-  {
     id: 'peri-chicken-egg',
     name: 'High Protein Peri Chicken & 2 Egg Box',
     price: 9.95,
@@ -80,6 +41,45 @@ export const dishes: Dish[] = [
     category: 'box'
   },
   {
+    id: 'chicken-caesar-wrap',
+    name: 'High Protein Chicken Caesar Wrap',
+    price: 9.95,
+    description: 'Fresh chicken breast, Romaine lettuce, Foccacia croutons, Homemade Caesar sauce, tomato, cucumber, onions & egg',
+    tags: ['High Protein'],
+    protein: 44,
+    carbs: 34,
+    fat: 20,
+    calories: 503,
+    image: '/images/dishes/High-Protein-Chicken-Caesar-Wrap.jpg',
+    category: 'wrap'
+  },
+  {
+    id: 'bbq-chicken-potato',
+    name: 'BBQ Chicken & Roasted Potato',
+    price: 9.95,
+    description: 'Tender BBQ chicken with perfectly roasted potatoes',
+    tags: ['Gluten Free', 'High Protein'],
+    protein: 45,
+    carbs: 38,
+    fat: 12,
+    calories: 450,
+    image: '/images/dishes/bbq-chicken-and-roast-potato.jpg',
+    category: 'box'
+  },
+  {
+    id: 'chicken-tikka-wrap',
+    name: 'High Protein Chicken Tikka Wrap',
+    price: 9.95,
+    description: 'Freshly marinated chicken breast, Homemade Tikka sauce, peppers, onion, tomato, cucumber, fresh herbs & spices',
+    tags: ['High Protein'],
+    protein: 47,
+    carbs: 33,
+    fat: 15,
+    calories: 459,
+    image: '/images/dishes/High-Protein-Chicken-Tikka-Wrap.jpg',
+    category: 'wrap'
+  },
+  {
     id: 'harissa-beef',
     name: 'Hot Honey Harissa Beef & Sweet Potato Box',
     price: 9.95,
@@ -90,32 +90,6 @@ export const dishes: Dish[] = [
     fat: 13,
     calories: 455,
     image: '/images/dishes/hot-honey-harissa-beef-and-sweet-potato-box.jpg',
-    category: 'box'
-  },
-  {
-    id: 'chicken-dhaba-curry',
-    name: 'Low Fat Chicken "Dhaba" Curry & Rice',
-    price: 9.95,
-    description: 'Authentic Indian-style chicken curry with rice',
-    tags: ['Gluten Free', 'High Protein'],
-    protein: 40,
-    carbs: 42,
-    fat: 8,
-    calories: 400,
-    image: '/images/dishes/low-fat-chicken-dhaba-curry-and-rice.jpg',
-    category: 'box'
-  },
-  {
-    id: 'bobotie-beef',
-    name: 'South African "Bobotie" Beef Box',
-    price: 9.95,
-    description: 'Traditional South African spiced beef dish',
-    tags: ['High Protein'],
-    protein: 41,
-    carbs: 35,
-    fat: 14,
-    calories: 445,
-    image: '/images/dishes/south-african-bobotie-beef-box.jpg',
     category: 'box'
   },
   {
@@ -132,6 +106,45 @@ export const dishes: Dish[] = [
     category: 'box'
   },
   {
+    id: 'prego-steak',
+    name: 'Prego Steak',
+    price: 9.95,
+    description: 'Portuguese-style garlic steak sandwich',
+    tags: ['High Protein'],
+    protein: 44,
+    carbs: 38,
+    fat: 16,
+    calories: 480,
+    image: '/images/dishes/prego-steak.jpg',
+    category: 'wrap'
+  },
+  {
+    id: 'bobotie-beef',
+    name: 'South African "Bobotie" Beef Box',
+    price: 9.95,
+    description: 'Traditional South African spiced beef dish',
+    tags: ['High Protein'],
+    protein: 41,
+    carbs: 35,
+    fat: 14,
+    calories: 445,
+    image: '/images/dishes/south-african-bobotie-beef-box.jpg',
+    category: 'box'
+  },
+  {
+    id: 'beef-steak-chilli',
+    name: 'Beef Steak Chilli & Mash Box',
+    price: 9.95,
+    description: 'Hearty beef steak chilli served with creamy mash',
+    tags: ['High Protein'],
+    protein: 42,
+    carbs: 40,
+    fat: 15,
+    calories: 475,
+    image: '/images/dishes/beef-steak-chilli-and-mash-box.jpg',
+    category: 'box'
+  },
+  {
     id: 'teriyaki-salmon',
     name: 'Teriyaki Salmon & Nourish Rice Box',
     price: 9.95,
@@ -145,16 +158,16 @@ export const dishes: Dish[] = [
     category: 'box'
   },
   {
-    id: 'veggie-bbq-chicken',
-    name: 'Vegetarian BBQ "Chicken" & Roasted Potato',
+    id: 'chicken-dhaba-curry',
+    name: 'Low Fat Chicken "Dhaba" Curry & Rice',
     price: 9.95,
-    description: 'Plant-based BBQ chicken with roasted potatoes',
-    tags: ['Vegetarian', 'High Protein'],
-    protein: 32,
-    carbs: 45,
-    fat: 10,
-    calories: 410,
-    image: '/images/dishes/vegetarian-barbecue-chicken-and-roasted-potato.jpg',
+    description: 'Authentic Indian-style chicken curry with rice',
+    tags: ['Gluten Free', 'High Protein'],
+    protein: 40,
+    carbs: 42,
+    fat: 8,
+    calories: 400,
+    image: '/images/dishes/low-fat-chicken-dhaba-curry-and-rice.jpg',
     category: 'box'
   },
   {
@@ -171,43 +184,17 @@ export const dishes: Dish[] = [
     category: 'flatbread'
   },
   {
-    id: 'prego-steak',
-    name: 'Prego Steak',
+    id: 'veggie-bbq-chicken',
+    name: 'Vegetarian BBQ "Chicken" & Roasted Potato',
     price: 9.95,
-    description: 'Portuguese-style garlic steak sandwich',
-    tags: ['High Protein'],
-    protein: 44,
-    carbs: 38,
-    fat: 16,
-    calories: 480,
-    image: '/images/dishes/prego-steak.jpg',
-    category: 'wrap'
-  },
-  {
-    id: 'chicken-caesar-wrap',
-    name: 'High Protein Chicken Caesar Wrap',
-    price: 9.95,
-    description: 'Fresh chicken breast, Romaine lettuce, Foccacia croutons, Homemade Caesar sauce, tomato, cucumber, onions & egg',
-    tags: ['High Protein'],
-    protein: 44,
-    carbs: 34,
-    fat: 20,
-    calories: 503,
-    image: '/images/dishes/High-Protein-Chicken-Caesar-Wrap.jpg',
-    category: 'wrap'
-  },
-  {
-    id: 'chicken-tikka-wrap',
-    name: 'High Protein Chicken Tikka Wrap',
-    price: 9.95,
-    description: 'Freshly marinated chicken breast, Homemade Tikka sauce, peppers, onion, tomato, cucumber, fresh herbs & spices',
-    tags: ['High Protein'],
-    protein: 47,
-    carbs: 33,
-    fat: 15,
-    calories: 459,
-    image: '/images/dishes/High-Protein-Chicken-Tikka-Wrap.jpg',
-    category: 'wrap'
+    description: 'Plant-based BBQ chicken with roasted potatoes',
+    tags: ['Vegetarian', 'High Protein'],
+    protein: 32,
+    carbs: 45,
+    fat: 10,
+    calories: 410,
+    image: '/images/dishes/vegetarian-barbecue-chicken-and-roasted-potato.jpg',
+    category: 'box'
   }
 ];
 
@@ -231,15 +218,15 @@ export const businessInfo: BusinessInfo = {
   tagline: 'High-protein, nutrient-dense meals made fresh in Douglas, Isle of Man.',
   location: 'Douglas, Isle of Man',
   address: '6 Prospect Hill, Douglas, IM1 1EJ, Isle of Man',
-  phone: '+44 1624 610226',
+  phone: '+44 7624 462222',
   email: 'andy@nourish.im',
   whatsapp: 'https://wa.me/447624462222',
   hours: {
-    monday: '8:00am – 6:00pm',
-    tuesday: '8:00am – 6:00pm',
-    wednesday: '8:00am – 6:00pm',
-    thursday: '8:00am – 6:00pm',
-    friday: '8:00am – 6:00pm',
+    monday: '10:00am – 4:00pm',
+    tuesday: '10:00am – 4:00pm',
+    wednesday: '10:00am – 4:00pm',
+    thursday: '10:00am – 4:00pm',
+    friday: '10:00am – 4:00pm',
     saturday: '12:00pm – 4:00pm',
     sunday: 'Closed'
   },

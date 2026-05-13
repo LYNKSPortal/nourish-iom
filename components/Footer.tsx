@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-2xl font-bold mb-4">Nourish</h3>
+            <h3 className="text-5xl font-bold mb-4 text-white font-bolota" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>Nourish</h3>
             <p className="text-white/90 mb-4">{businessInfo.tagline}</p>
           </div>
 

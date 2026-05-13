@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Roboto } from "next/font/google";
 import "./globals.css";
-import PromoBar from "@/components/PromoBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -31,7 +30,6 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfair.variable} ${roboto.variable}`}>
       <body className="min-h-screen flex flex-col">
-        <PromoBar />
         <Header />
         <main className="flex-grow">{children}</main>
         <Footer />

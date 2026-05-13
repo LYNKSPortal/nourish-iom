@@ -35,6 +35,11 @@ export default function DishCard({ dish }: DishCardProps) {
               {tag}
             </span>
           ))}
+          {dish.calories <= 550 && (
+            <span className="bg-[#FBF2E0] text-[#025336] text-xs px-3 py-1 rounded-full font-medium">
+              Low Calorie
+            </span>
+          )}
         </div>
         
         <div className="grid grid-cols-4 gap-3 text-center text-xs border-t border-gray-200 pt-4 mb-4">
