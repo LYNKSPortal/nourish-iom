@@ -83,6 +83,7 @@ export default function Header() {
             <li><Link href="/our-dishes" onClick={toggleMenu} className="text-4xl font-bold text-white hover:text-[#FBF2E0] transition-colors font-bolota" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>Our Dishes</Link></li>
             <li><Link href="https://nourishiom.touchtakeaway.net/menu/MEAL-BOXES" target="_blank" rel="noopener noreferrer" onClick={toggleMenu} className="text-4xl font-bold text-white hover:text-[#FBF2E0] transition-colors font-bolota" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>Order Online</Link></li>
             <li><Link href="/contact" onClick={toggleMenu} className="text-4xl font-bold text-white hover:text-[#FBF2E0] transition-colors font-bolota" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>Contact Us</Link></li>
+            <li><Link href="https://wa.me/447624462222" target="_blank" rel="noopener noreferrer" onClick={toggleMenu} className="text-4xl font-bold text-white hover:text-[#FBF2E0] transition-colors font-bolota" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>Whatsapp Andy</Link></li>
           </ul>
         </div>
       )}
