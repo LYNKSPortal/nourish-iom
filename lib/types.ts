@@ -9,7 +9,7 @@ export interface Dish {
   fat: number;
   calories: number;
   image: string;
-  category: 'box' | 'wrap' | 'burrito' | 'pizza' | 'flatbread';
+  category: 'box' | 'wrap' | 'burrito' | 'pizza' | 'flatbread' | 'drink' | 'dessert';
 }
 
 export interface Package {
