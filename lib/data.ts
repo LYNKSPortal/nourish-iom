@@ -44,7 +44,7 @@ export const dishes: Dish[] = [
     id: 'chicken-caesar-wrap',
     name: 'High Protein Chicken Caesar Wrap',
     price: 9.95,
-    description: 'High Protein Chicken Caesar wrap with fresh chicken breast, Romaine lettuce, Focaccia croutons, Homemade Caesar sauce, tomato, cucumber, onions & egg.',
+    description: 'High Protein Chicken Caesar wrap with fresh chicken breast, Crispy lean smoked bacon, Romaine lettuce, "Ross bakery" Focaccia croutons, homemade Caesar sauce, tomato, cucumber, onions & egg.',
     tags: ['High Protein'],
     protein: 44,
     carbs: 34,
