@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title desc">
+  <title id="title">Nourish dish coming soon</title>
+  <desc id="desc">Nourish logo above a Dish Coming Soon message</desc>
+  <style>
+    @font-face {
+      font-family: 'Bolota';
+      src: url('/fonts/bolota/bolota-bold.woff2') format('woff2');
+      font-weight: 700;
+    }
+  </style>
+  <rect width="800" height="800" fill="#E9D5AE"/>
+  <text x="400" y="375" fill="#D95E25" font-family="Bolota, sans-serif" font-size="122" font-weight="700" text-anchor="middle">Nourish</text>
+  <line x1="220" y1="435" x2="580" y2="435" stroke="#025336" stroke-width="4"/>
+  <text x="400" y="505" fill="#025336" font-family="Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="3" text-anchor="middle">DISH COMING SOON</text>
+</svg>

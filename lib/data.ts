@@ -80,16 +80,16 @@ export const dishes: Dish[] = [
     category: 'wrap'
   },
   {
-    id: 'harissa-beef',
-    name: 'Hot Honey Harissa Beef & Sweet Potato Box',
+    id: 'high-protein-mac-n-cheese',
+    name: "High Protein Mac 'n' Cheese",
     price: 9.95,
-    description: 'Harissa seasoned lean beef drizzled with hot honey and served with roasted sweet potato, tahini cottage cheese, and pickled red onion.',
-    tags: ['Gluten Free', 'High Protein'],
-    protein: 41,
-    carbs: 39,
+    description: 'Ultimate guilt free comfort food - Fresh Chicken breast, Chorizo, crispy bacon, peppers, onions, garlic & Parmesan in a low fat seasoned homemade cheese sauce.',
+    tags: ['High Protein'],
+    protein: 38,
+    carbs: 36,
     fat: 20,
-    calories: 533,
-    image: '/images/dishes/hot-honey-harissa-beef-and-sweet-potato-box.jpg',
+    calories: 480,
+    image: '/images/dishes/coming-soon.svg',
     category: 'box'
   },
   {
