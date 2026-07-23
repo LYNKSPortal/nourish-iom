@@ -7,10 +7,10 @@ export default function Home() {
 
   return (
     <div>
-      <section className="relative bg-black py-24 md:py-32 lg:py-40 overflow-hidden">
+      <section className="relative bg-black py-32 md:py-40 lg:py-48 overflow-hidden">
         <div 
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: 'url(/bunch-of-dishes.jpg)' }}
+          style={{ backgroundImage: 'url(/outside-the-shop.jpeg)' }}
         />
         <div className="absolute inset-0 bg-black/40" />
         <div className="relative max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -45,6 +45,9 @@ export default function Home() {
 
       <section className="py-16 bg-white">
         <div className="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="max-w-4xl mx-auto mb-12 text-center text-lg leading-relaxed text-gray-700">
+            Welcome to Nourish, where healthy meets fast! Based in Douglas, Isle of Man, we&apos;re a proudly Manx business dedicated to providing high-quality, high-protein, nutrient-dense meals. Our chef-prepared meal boxes are made fresh daily with 100% natural ingredients, designed to fuel your body and keep you going. Whether you need a quick, nutritious bite or convenient meal prep solutions, we&apos;ve got you covered. Order now and power your day the Nourish way!
+          </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="bg-[#FBF2E0] p-8 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
               <div className="text-5xl mb-4">💪</div>
