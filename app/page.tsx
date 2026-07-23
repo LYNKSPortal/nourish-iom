@@ -1,9 +1,18 @@
 import Button from '@/components/Button';
 import DishCard from '@/components/DishCard';
 import { dishes, businessInfo } from '@/lib/data';
+import Image from 'next/image';
 
 export default function Home() {
   const featuredDishes = dishes.slice(-3).reverse();
+  const galleryImages = [
+    { src: '/home-gallery/all-our-boxes.jpg', alt: 'Nourish meal boxes' },
+    { src: '/home-gallery/dishes-on-table.jpg', alt: 'Nourish dishes on a table' },
+    { src: '/home-gallery/eating-at-the-shop.jpg', alt: 'Customers eating at Nourish' },
+    { src: '/home-gallery/nourish-team.jpg', alt: 'The Nourish team' },
+    { src: '/home-gallery/serving-customers.jpg', alt: 'Nourish serving customers' },
+    { src: '/home-gallery/woman-outside-shop.jpg', alt: 'Customer outside the Nourish shop' },
+  ];
 
   return (
     <div>
@@ -86,6 +95,22 @@ export default function Home() {
           <div className="text-center mt-12">
             <Button href="/our-dishes">View All Dishes</Button>
           </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-white">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {galleryImages.map((image) => (
+            <div key={image.src} className="relative aspect-[4/3] overflow-hidden shadow-md">
+              <Image
+                src={image.src}
+                alt={image.alt}
+                fill
+                className="object-cover transition-transform duration-300 hover:scale-105"
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              />
+            </div>
+          ))}
         </div>
       </section>
 
