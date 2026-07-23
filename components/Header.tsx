@@ -61,6 +61,7 @@ export default function Header() {
             <ul className="hidden md:flex md:justify-center md:space-x-8 py-4 border-t border-gray-200">
               <li><Link href="/" className="block py-2 md:py-0 text-[#202020] hover:text-[#D95E25] font-medium transition-colors">Home</Link></li>
               <li><Link href="/our-dishes" className="block py-2 md:py-0 text-[#202020] hover:text-[#D95E25] font-medium transition-colors">Our Dishes</Link></li>
+              <li><Link href="/gallery" className="block py-2 md:py-0 text-[#202020] hover:text-[#D95E25] font-medium transition-colors">Gallery</Link></li>
               <li><Link href="https://nourishiom.touchtakeaway.net/menu/MEAL-BOXES" target="_blank" rel="noopener noreferrer" className="block py-2 md:py-0 text-[#202020] hover:text-[#D95E25] font-medium transition-colors">Order Online</Link></li>
               <li><Link href="/contact" className="block py-2 md:py-0 text-[#202020] hover:text-[#D95E25] font-medium transition-colors">Contact Us</Link></li>
             </ul>
@@ -81,6 +82,7 @@ export default function Header() {
           <ul className="flex flex-col items-center space-y-8 text-center">
             <li><Link href="/" onClick={toggleMenu} className="text-4xl font-bold text-white hover:text-[#FBF2E0] transition-colors font-bolota" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>Home</Link></li>
             <li><Link href="/our-dishes" onClick={toggleMenu} className="text-4xl font-bold text-white hover:text-[#FBF2E0] transition-colors font-bolota" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>Our Dishes</Link></li>
+            <li><Link href="/gallery" onClick={toggleMenu} className="text-4xl font-bold text-white hover:text-[#FBF2E0] transition-colors font-bolota" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>Gallery</Link></li>
             <li><Link href="https://nourishiom.touchtakeaway.net/menu/MEAL-BOXES" target="_blank" rel="noopener noreferrer" onClick={toggleMenu} className="text-4xl font-bold text-white hover:text-[#FBF2E0] transition-colors font-bolota" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>Order Online</Link></li>
             <li><Link href="/contact" onClick={toggleMenu} className="text-4xl font-bold text-white hover:text-[#FBF2E0] transition-colors font-bolota" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>Contact Us</Link></li>
             <li><Link href="https://wa.me/447624462222" target="_blank" rel="noopener noreferrer" onClick={toggleMenu} className="text-4xl font-bold text-white hover:text-[#FBF2E0] transition-colors font-bolota" style={{ textShadow: '4px 4px 0px rgba(0, 0, 0, 0.3)' }}>Whatsapp Andy</Link></li>
