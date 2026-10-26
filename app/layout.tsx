@@ -20,6 +20,15 @@ const roboto = Roboto({
 export const metadata: Metadata = {
   title: "Nourish - Healthy Meal Prep & Takeaway | Douglas, Isle of Man",
   description: "High-protein, nutrient-dense meals made fresh daily in Douglas, Isle of Man. Chef-prepared, healthy meal prep with island-wide delivery.",
+  icons: {
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+      { url: "/favicon.ico" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
