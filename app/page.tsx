@@ -4,7 +4,10 @@ import { dishes, businessInfo } from '@/lib/data';
 import Image from 'next/image';
 
 export default function Home() {
-  const featuredDishes = dishes.slice(-3).reverse();
+  const featuredDishIds = ['lasagna-wrap', 'steak-rice', 'chicken-tikka-wrap'];
+  const featuredDishes = featuredDishIds
+    .map((id) => dishes.find((dish) => dish.id === id))
+    .filter((dish): dish is (typeof dishes)[number] => Boolean(dish));
   const galleryImages = [
     { src: '/home-gallery/all-our-boxes.jpg', alt: 'Nourish meal boxes' },
     { src: '/home-gallery/dishes-on-table.jpg', alt: 'Nourish dishes on a table' },
@@ -27,7 +30,7 @@ export default function Home() {
             Welcome to Nourish
           </h1>
           <p className="text-xl text-white mb-8 max-w-3xl mx-auto">
-            Healthy, high-protein, chef-prepared meals made fresh daily
+            Healthy, high protein, chef prepared meals made fresh daily. Available from our shop on Prospect Hill Douglas, all EVF garages, Robinson&apos;s Food Hall &amp; Terrace Shop, Corkills in Onchan, Mace in Peel, Ballasalla Stores, Castletown Station Garage.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-8">
