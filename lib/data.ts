@@ -89,7 +89,7 @@ export const dishes: Dish[] = [
     carbs: 36,
     fat: 20,
     calories: 480,
-    image: '/images/dishes/coming-soon.svg',
+    image: '/images/dishes/high-protein-mac-n-cheese.jpg',
     category: 'box'
   },
   {
