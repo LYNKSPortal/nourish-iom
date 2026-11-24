@@ -42,7 +42,7 @@ export default function DishCard({ dish }: DishCardProps) {
           )}
         </div>
         
-        <div className="grid grid-cols-4 gap-3 text-center text-xs border-t border-gray-200 pt-4 mb-4">
+        <div className={`grid ${dish.fibre ? 'grid-cols-5' : 'grid-cols-4'} gap-3 text-center text-xs border-t border-gray-200 pt-4 mb-4`}>
           <div>
             <div className="font-bold text-[#D95E25] text-sm">{dish.protein}g</div>
             <div className="text-gray-500 text-xs mt-1">Protein</div>
@@ -55,6 +55,12 @@ export default function DishCard({ dish }: DishCardProps) {
             <div className="font-bold text-[#D95E25] text-sm">{dish.fat}g</div>
             <div className="text-gray-500 text-xs mt-1">Fat</div>
           </div>
+          {dish.fibre !== undefined && (
+            <div>
+              <div className="font-bold text-[#D95E25] text-sm">{dish.fibre}g</div>
+              <div className="text-gray-500 text-xs mt-1">Fibre</div>
+            </div>
+          )}
           <div>
             <div className="font-bold text-[#D95E25] text-sm">{dish.calories}</div>
             <div className="text-gray-500 text-xs mt-1">Cals</div>

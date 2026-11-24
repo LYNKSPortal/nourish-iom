@@ -145,16 +145,17 @@ export const dishes: Dish[] = [
     category: 'box'
   },
   {
-    id: 'teriyaki-salmon',
-    name: 'Teriyaki Salmon & Nourish Rice Box',
+    id: 'jamaican-jerk-chicken',
+    name: 'Jamaican Jerk Chicken, Beans & Rice',
     price: 9.95,
-    description: 'Fresh Salmon with Basmati rice, green beans, kale, spinach, chickpeas, broccoli & peas with a Japanese pickled cucumber salad.',
-    tags: ['Gluten Free', 'High Protein'],
-    protein: 43,
-    carbs: 42,
-    fat: 12,
-    calories: 497,
-    image: '/images/dishes/teriyaki-salmon-and-nourish-rice-box.jpg',
+    description: 'Marinated Chicken breast with garlic, ginger, fresh chilli & other spices. Mixed beans in a rich tomato sauce & Nourish Rice.',
+    tags: ['Gluten Free', 'High Protein', 'Fibre Maxing'],
+    protein: 57,
+    carbs: 41,
+    fat: 10,
+    fibre: 27,
+    calories: 500,
+    image: '/images/dishes/jamaican-jerk-chicken-beans-and-rice.jpg',
     category: 'box'
   },
   {

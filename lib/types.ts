@@ -7,6 +7,7 @@ export interface Dish {
   protein: number;
   carbs: number;
   fat: number;
+  fibre?: number;
   calories: number;
   image: string;
   category: 'box' | 'wrap' | 'burrito' | 'pizza' | 'flatbread' | 'drink' | 'dessert';
